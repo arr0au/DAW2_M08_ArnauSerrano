@@ -63,3 +63,6 @@ Checklist d'estudis cursats:
 - [x] ~~Batxillerat Cientificotecnològic~~
 - [] Desenvolupament d'aplicacions web
 - [] Enginyeria Informàtica
+
+Objectiu professional: 
+- Viatjar i treballar en un altre país.
