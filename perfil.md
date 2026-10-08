@@ -57,7 +57,7 @@ Una frase que m'agrada es:
 
 Com a objectiu personal aquest curs, tinc aprobar amb bona mitjana per poder accedir a la universitat.
 
-Checklist d'estudis cursats:
+Checklist d'estudis cursats: 
 
 - [x] ~~ESO~~
 - [x] ~~Batxillerat Cientificotecnològic~~
