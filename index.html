@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Arnau Serrano Gaona</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fuente Pixelada similar a Minecraft -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Contenedor del fondo (Degradado animado) -->
+    <div class="panorama-bg"></div>
+
+    <main class="menu-container">
+        
+        <!-- Título principal imitando el logo de Minecraft -->
+        <header class="title-header">
+            <h1 class="minecraft-title">ARROW</h1>
+            <p class="subtitle">Arnau Serrano Gaona</p>
+            <!-- El texto amarillo inclinado (Splash text) -->
+            <div class="splash-text">¡Apruébame!</div>
+        </header>
+
+        <!-- Botones del menú principal -->
+        <nav class="button-menu">
+            <!-- Botones de ancho completo -->
+            <button class="mc-button full-width" onclick="location.href='#perfil'">Perfil Profesional</button>
+            <button class="mc-button full-width" onclick="location.href='#habilidades'">Habilidades</button>
+
+            <!-- Grupo de botones divididos -->
+            <div class="button-row">
+                <button class="mc-button half-width" onclick="location.href='#contacto'">Opciones...</button>
+                <button class="mc-button half-width" onclick="window.open('https://github.com/arr0au', '_blank')">Salir (GitHub)</button>
+            </div>
+            
+            <!-- Botones pequeños abajo -->
+             <div class="bottom-buttons">
+                <!-- Botón de Email con icono SVG limpio -->
+                <button class="mc-button small-btn" title="Email" onclick="location.href='mailto:arnausg0709@gmail.com'">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" width="20px" height="20px">
+                        <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                    </svg>
+                </button>
+                <!-- Espacio flexible en medio y Botón de CV con enlace a reemplazar -->
+                <button class="mc-button small-btn" title="CV PDF" onclick="window.open('https://drive.google.com/file/d/1a2I4pTU_LZUUD3TQBoL35kLeQNtNwf7x/view?usp=sharing', '_blank')">CV</button>
+            </div>
+        </nav>
+
+        <!-- Contenedores de contenido (Se muestran al hacer clic en los botones) -->
+        
+        <!-- PERFIL -->
+        <section id="perfil" class="content-panel hidden">
+            <h2>Mi Perfil</h2>
+            <div class="panel-text">
+                <p>Estudiante de DAW con sólidos conocimientos en desarrollo web (Java, HTML, CSS, SQL, JavaScript) y experiencia en proyectos prácticos, incluyendo integración de sistemas de pago.</p>
+                <br>
+                <p>Responsable, puntual y autónomo, con motivación por aprender nuevas tecnologías y afrontar retos técnicos. Busco mi primera oportunidad como desarrollador web para aportar valor y crecer profesionalmente.</p>
+            </div>
+            <button class="mc-button back-btn" onclick="hidePanels()">Volver al Título</button>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section id="habilidades" class="content-panel hidden">
+            <h2>Inventario (Skills)</h2>
+            <div class="skills-list">
+                <div class="skill-item">HTML & CSS (Avanzado)</div>
+                <div class="skill-item">JavaScript (Intermedio)</div>
+                <div class="skill-item">Java & Spring Boot (Intermedio)</div>
+                <div class="skill-item">Bases de Datos (Intermedio)</div>
+            </div>
+            <button class="mc-button back-btn" onclick="hidePanels()">Volver al Título</button>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" class="content-panel hidden">
+            <h2>Opciones (Contacto)</h2>
+            <div class="panel-text">
+                <p><strong>Email:</strong> arnausg0709@gmail.com</p>
+                <br>
+                <p><strong>Base de Operaciones:</strong> Mataró, Cataluña</p>
+            </div>
+            <button class="mc-button back-btn" onclick="hidePanels()">Volver al Título</button>
+        </section>
+
+    </main>
+
+    <!-- Versión y Copyright -->
+    <footer class="footer-info">
+        <span class="version">Portfolio v1.0.0</span>
+        <span class="copyright">Copyright Arnau Serrano. Do not distribute!</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
